@@ -1,3 +1,4 @@
+
 <iframe frameborder="0" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0;" width="100%" height="100%" src="https://drive.google.com/file/d/1TjG6J8wdTOZIhseQxfmqhpu4j8-Rt6wE/preview" allowfullscreen="" allow="autoplay"></iframe>
 <style>
 .collapsible {
@@ -105,3 +106,57 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
+<div class="cover">
+	<video preload autoplay src="https://media2-production.mightynetworks.com/asset/18412034/output_free.mp4" alt="Twitter Bird" id="icon"></video>
+</div> 
+
+
+<style>body {
+	margin: 0;
+	padding: 0;
+}
+
+.cover {
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation: fade-out 8s /*infinite*/;
+}
+
+.cover #icon {
+	--size: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: var(--size);
+	animation: zoom-in 4s /*infinite*/;
+	animation-delay: 4s;
+}
+
+@keyframes zoom-in {
+	50% {
+		width: var(--size);
+	}
+	60% {
+		width: calc(var(--size) * 0.9);
+	}
+	100% {
+		width: 250%;
+	}
+}
+@keyframes fade-out {
+	0%, 85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.content {
+	width: 100%;
+}</style>
