@@ -1,0 +1,107 @@
+<iframe frameborder="0" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0;" width="100%" height="100%" src="https://drive.google.com/file/d/1TjG6J8wdTOZIhseQxfmqhpu4j8-Rt6wE/preview" allowfullscreen="" allow="autoplay"></iframe>
+<style>
+.collapsible {
+background-color: transparent !important;
+  color: white;
+  cursor: pointer;
+top: 0;
+position: fixed;
+filter: blur(0.8px);
+left: 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #af0a0a !important;
+  color: black;
+filter: blur(0);
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #af0a0aaa !important;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+</style>
+</head>
+<body>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<style>
+.collapsible {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #af0a0a;
+  color: black;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #af0a0a;
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="collapsible">Lettuce.it promotion video (click here for more details)</button>
+<div class="content">
+<font size="1">uploaded by Lettuce.</font><br>
+<p>A promotion video for my website meant to be comedic and ironic yet look barely professional. This is a $0 budget project and took me like 20 mins to make. Users online have took the renderforest 3D explainer toolkit and turned it into ironic, edgy, and dark humor memes. I decided to take that and actually make a promotion video for it. Enjoy!</p>
+</div>
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
