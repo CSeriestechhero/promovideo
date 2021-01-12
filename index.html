@@ -117,15 +117,6 @@ for (i = 0; i < coll.length; i++) {
 	padding: 0;
 }
 
-.cover {
-	background: #000;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	animation: fade-out 8s /*infinite*/;
-}
-
 .cover #icon {
 	--size: 80%;
 	position: absolute;
@@ -135,6 +126,8 @@ for (i = 0; i < coll.length; i++) {
 	width: var(--size);
 	animation: zoom-in 4s /*infinite*/;
 	animation-delay: 4s;
+       display: block;
+	animation: fade-out 8s /*infinite*/;
 }
 
 @keyframes zoom-in {
@@ -146,17 +139,21 @@ for (i = 0; i < coll.length; i++) {
 	}
 	100% {
 		width: 250%;
+display: none !important;
 	}
 }
 @keyframes fade-out {
 	0%, 85% {
 		opacity: 1;
+                top: 50%;
 	}
 	100% {
-		opacity: 0;
+                display: none;
+                top: -100%;
 	}
 }
 
 .content {
 	width: 100%;
+        display: none;
 }</style>
