@@ -123,24 +123,13 @@ for (i = 0; i < coll.length; i++) {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+top: -100%;
 	width: var(--size);
-	animation: zoom-in 4s /*infinite*/;
 	animation-delay: 4s;
-       display: block;
-	animation: fade-out 8s /*infinite*/;
-}
-
-@keyframes zoom-in {
-	50% {
-		width: var(--size);
-	}
-	60% {
-		width: calc(var(--size) * 0.9);
-	}
-	100% {
-		width: 250%;
-display: none !important;
-	}
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+  animation-iteration-count: 1;
+	animation: fade-out 8s;
 }
 @keyframes fade-out {
 	0%, 85% {
@@ -148,12 +137,11 @@ display: none !important;
                 top: 50%;
 	}
 	100% {
-                display: none;
                 top: -100%;
+display: none;
 	}
 }
 
 .content {
 	width: 100%;
-        display: none;
 }</style>
